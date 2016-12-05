@@ -9,7 +9,19 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > grep: search for a string in a file  
+cd -: toggles between two most recent directories  
+ps: displays information of what processes are running on the system  
+top: displayes top processes running sorted by cpu usage  
+kill, combined with ps -ef | grep: find process id and then kill the process  
+chmod: changes the permission of a directory  
+whatis: description of the unix command  
+tail: prints last 10 lines of a file  
+less: loads less of a log file for efficiency  
+wget: download software etc from the internet  
+
+
+
 
 ---
 
@@ -24,7 +36,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls: lists files in the current directory  
+ls -a: list all files in the current directory, including hidden files  
+ls -l: lists files in long form in the current directory  
+ls -lh: lists files in long form with readable file sizes  
+ls -lah: lists all files in long form with readable file sizes, including hidden files  
+ls -t: lists files in the current directory, sort by time and date  
+ls -Glp: lists files in long form in the current directory with syntax highlighting  
 
 ---
 
@@ -40,7 +58,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs turns the output of a command into the input for a second command, or where you would use a pipe to have multiple commands
+
 
  
 
