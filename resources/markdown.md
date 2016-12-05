@@ -173,7 +173,7 @@ What is the most installed language in the world?
 - Spark
 - Javascript
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>>Javascript
 
 -
 
@@ -186,7 +186,7 @@ What is the distribution of t-squared?
  * Beta
  * Bivariate Normal
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>>F
 
 ***
 
@@ -197,10 +197,13 @@ In the scikit-learn's official source repo, about how many issues are outstandin
 3. 700  
 4. 7000  
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>>3. 700
 
 ---
 
 ## <a name="section-r"></a>References 
+[Statistics Times](http://statisticstimes.com/tech/top-computer-languages.php)
+[Proof F is Equal to T-Squared, StackExchange](http://stats.stackexchange.com/questions/55236/prove-f-test-is-equal-to-t-test-squared)
+[Scikit-learn's Repo](https://github.com/scikit-learn/scikit-learn)
 
 [Markdown Help](http://mathoverflow.net/editing-help)
