@@ -62,8 +62,8 @@ ls -t: displays newest file first
 
 What does `xargs` do? Give an example of how to use it.
 
-> > xargs turns the output of a command into the input for a second command, or where you would use a pipe to have multiple commands.  
-find . | xargs cksum | sort  
+> > Xargs turns the output of a command into the input for a second command, or where you would use a pipe to have multiple commands.  
+`find . | xargs cksum | sort`  
 This creates a list of sorted check sums of the working directory.
 
 
