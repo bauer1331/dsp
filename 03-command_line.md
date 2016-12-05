@@ -50,7 +50,11 @@ ls -Glp: lists files in long form in the current directory with syntax highlight
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -c: displays files by timestamp  
+ls -d: displays only directories  
+ls -R: displays subdirectories as well  
+ls -1: displays each entry on a new line
+ls -t: displays newest file first
 
 ---
 
@@ -58,7 +62,9 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > xargs turns the output of a command into the input for a second command, or where you would use a pipe to have multiple commands
+> > xargs turns the output of a command into the input for a second command, or where you would use a pipe to have multiple commands.  
+find . | xargs cksum | sort  
+This creates a list of sorted check sums of the working directory.
 
 
  
