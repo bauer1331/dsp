@@ -197,13 +197,13 @@ In the scikit-learn's official source repo, about how many issues are outstandin
 3. 700  
 4. 7000  
 
->>3. 700
+>> 3. 700
 
 ---
 
 ## <a name="section-r"></a>References 
-[Statistics Times](http://statisticstimes.com/tech/top-computer-languages.php)
-[Proof F is Equal to T-Squared, StackExchange](http://stats.stackexchange.com/questions/55236/prove-f-test-is-equal-to-t-test-squared)
+[Statistics Times](http://statisticstimes.com/tech/top-computer-languages.php)  
+[Proof F is Equal to T-Squared, StackExchange](http://stats.stackexchange.com/questions/55236/prove-f-test-is-equal-to-t-test-squared)  
 [Scikit-learn's Repo](https://github.com/scikit-learn/scikit-learn)
 
 [Markdown Help](http://mathoverflow.net/editing-help)
