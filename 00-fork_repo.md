@@ -9,7 +9,6 @@ The process below is designed to be accessible to anyone regardless of backgroun
 
 # Set up your repository on GitHub
 
-
 ## Step 1: Sign up for GitHub
 
 You will need a GitHub account.
@@ -55,6 +54,7 @@ Here's your first chance to practice this:
 
 What is your favorite [emoji](http://www.emoji-cheat-sheet.com/)?
 
-:elephant:
+	:elephant:
+
 
 
