@@ -41,7 +41,17 @@ sorted(pets, key=lambda pet: pet[1])
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension is a way to make a new list that iterates over each value in an original list while performing a computation or operation.  
+numbers = [1,2,3]
+addone = [n + 1 for n in numbers if n % 2 == 1]
+addonemf = map(lambda n: n + 1, filter(lambda n: n % 2 == 1, numbers))  
+  
+While there is much discussion over which, list comprehension or using `map` and `filter` where appropriate, much of the functional uses are the same between the two. `map` incurs an additional function for each element and when used with a lambda function, while list comprehension is compiled into a loop. With existing functions, usng `map` can be beneficial.  
+
+Set comprehensions are similar to list comprehensions:  
+setcomp = {x for x in 'settled' if x not in 'moved'}  
+Dictonary comprehensions:  
+addonedict = {n: n + 1 for n in numbers if n % 2 == 1}
 
 ---
 
@@ -56,7 +66,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 937
 
 b.  
 ```
@@ -64,7 +74,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513
 
 c.  
 ```
@@ -72,7 +82,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
