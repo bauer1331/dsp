@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and tuples both have sequences of values that are indexed, and can be used with most list operators. They are different because list are mutable while tuples are immutable, and instead can only replace a tuple with another tuple. Lists being mutable aren't hashable and therefore cannot be used as keys in dictionaries, but tuples being immutable can be used as keys in dictionaries. 
 
 ---
 
@@ -20,7 +20,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and sets are both sequences of values, but a set cannot have duplicates and are unordered and hashable. Lists can contain all kinds of objects. To find a specific element, meaning to find if an element is within a sequence of values, sets are much more efficient, because they are implemented using hash tables. An item's existance in a set can be checked using mapping and without searching through every value as a list would. 
 
 ---
 
@@ -28,7 +28,12 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python's `lambda` is a way to create a function object, and is useful for one off functions, where `def` is used more for functions with repeated uses.  
+pets = [  
+	('Max', 'dog', 13),  
+	('Sam', 'cat', 11),  
+	('Murphy', 'cat', 9),]  
+sorted(pets, key=lambda pet: pet[1])
 
 ---
 
