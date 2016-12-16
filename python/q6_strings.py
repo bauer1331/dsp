@@ -18,7 +18,15 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count >= 10:
+        x = 'many'
+    else:
+        x = str(count)
+    return 'Number of donuts: ' + x
+
+    #raise NotImplementedError
+
+
 
 
 def both_ends(s):
@@ -37,7 +45,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        return ''
+    else:
+        return s[:2] + s[-2:]
+
 
 
 def fix_start(s):
@@ -56,7 +68,16 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+
+    updated = [s[0]]
+    for char in s[1:]:
+        if char == s[0]:
+            updated.append('*')
+        else:
+            updated.append(char)
+    return ''.join(updated)
+
+    #raise NotImplementedError
 
 
 def mix_up(a, b):
@@ -74,8 +95,9 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
 
+    return b[:2] + a[2:] +' ' + a[:2] + b[2:]
+    #raise NotImplementedError
 
 def verbing(s):
     """
@@ -91,7 +113,14 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    
+    if len(s) >= 3:
+            if s[-3:] == 'ing':
+                print s + 'ly'
+            else: print s + 'ing'
+    else: 
+        return s
+#    raise NotImplementedError
 
 
 def not_bad(s):
@@ -111,7 +140,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+
+    index_not = s.find('not')
+    index_bad = s.find('bad')
+    if index_not < index_bad:
+        print s[:index_not] + 'good' + s[(index_bad+3):]
+    else: 
+        return s
+#    raise NotImplementedError
 
 
 def front_back(a, b):
@@ -130,4 +166,17 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if len(a) %2 ==0:
+        front_indexa = len(a)/2
+    else:
+         front_indexa =len(a)/2+1
+    if len(b) %2 ==0:
+        front_indexb = len(b)/2
+    else:
+         front_indexb =len(b)/2+1
+    back_indexa = len(a)/2
+    back_indexb = len(b)/2
+
+    return a[:front_indexa] + b[:front_indexb] + a[-back_indexa:] + b[-back_indexb:]
+    #raise NotImplementedError
+

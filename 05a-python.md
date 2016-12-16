@@ -45,9 +45,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 numbers = [1,2,3]
 addone = [n + 1 for n in numbers if n % 2 == 1]
 addonemf = map(lambda n: n + 1, filter(lambda n: n % 2 == 1, numbers))  
-  
 While there is much discussion over which, list comprehension or using `map` and `filter` where appropriate, much of the functional uses are the same between the two. `map` incurs an additional function for each element and when used with a lambda function, while list comprehension is compiled into a loop. With existing functions, usng `map` can be beneficial.  
-
 Set comprehensions are similar to list comprehensions:  
 setcomp = {x for x in 'settled' if x not in 'moved'}  
 Dictonary comprehensions:  
