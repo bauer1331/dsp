@@ -2,6 +2,8 @@
 
 >> Finding summary statistics on the number of kids per household for this actual vs. biased sample focuses on a difference between the bases assumed to highlight a missing data problem, and disproportional probability in sampling. For example, the biased sample "surveys" kids and determines how many siblings each of them has. As pointed out in the book this eliminates all households without kids. This is where the biased sample is sampling from the incorrect base, it is focusing on kids instead of households. It assumes all households have kids or that only households that have kids are relevant, overlooking households without kids. Furthermore, each additional child in a household increases the likelihood that a child from that household will get chosen for the sample and increasing the number of siblings sampled, creating a biased sample. Combined, the observed sample comes out with a mean of 1.02 kids per household compared to the biased sample with a mean of 2.40, doubling the mean. 
 
+![PMF Graph](https://github.com/bauer1331/dsp/blob/master/statistics/biasedVsUnbiased.png)
+
 import numpy as np
 import thinkstats2
 import thinkplot
