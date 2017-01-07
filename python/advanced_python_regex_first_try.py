@@ -11,7 +11,6 @@ def get_csv(filename, col):
 
 
 
-
 #print test
 #print test
 

@@ -79,14 +79,35 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The probability of Elvis being an identical twin, given that his twin was also a boy is 0.455. This is shown with Baye's Theory that P(A|B) = (P(A)P(B|A))/P(B). Where we look for Elvis being identical given that his twin was his brother. 
+'''
+ P(brothers) = P(brothers|ident)*P(ident)+P(brothers|frat)*P(frat)
+ P(brothers|ident) = 1/2
+ P(brothers|frat) = 1/2*1/2 = 1/4
+ P(frat) = 1/125
+ P(ident) = 1/300
+
+ P(ident|brothers) = (P(brothers|ident)P(ident))/P(brothers)
+ P(ident|brothers) = (P(brothers|ident)P(ident))/P(brothers|ident)*P(ident)+P(brothers|frat)*P(frat)
+ P(ident|brothers) = ((1/2)*(1/300))/((1/2)*(1/300)+(1/4)*(1/125))
+ '''
+
+p_ident = 1/300.0
+p_frat = 1/125.0
+p_bro_ident = 1/2.0
+p_bro_frat = 1/4.0
+p_brothers = p_bro_ident * p_ident + bro_frat * p_frat
+
+p_ident_bro = (p_bro_ident*p_ident)/p_brothers
+print p_ident_bro
+#0.45454545454545453
 
 ---
 
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist statistics is the standard statistics people learn first. For example a coin toss, with given probabilities that are combined in various ways to produce models of probabilites in a variety of situations. Bayesian statistics takes those probabilities from frequentist statistics and says, if I have these probabilities, but then I learn more things about them, I will update my model to include the things that I have learned. Or if there are models of probabilities and prior knowledge a frequentist would build the prior knowledge into the model while a bayesian would build a model (potentially with some prior knowledge) and the iterate the model with additional knowledge. 
 
 ---
 

@@ -42,8 +42,8 @@ sorted(pets, key=lambda pet: pet[1])
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
 >> List comprehension is a way to make a new list that iterates over each value in an original list while performing a computation or operation.  
-numbers = [1,2,3]
-addone = [n + 1 for n in numbers if n % 2 == 1]
+numbers = [1,2,3]  
+addone = [n + 1 for n in numbers if n % 2 == 1]  
 addonemf = map(lambda n: n + 1, filter(lambda n: n % 2 == 1, numbers))  
 While there is much discussion over which, list comprehension or using `map` and `filter` where appropriate, much of the functional uses are the same between the two. `map` incurs an additional function for each element and when used with a lambda function, while list comprehension is compiled into a loop. With existing functions, usng `map` can be beneficial.  
 Set comprehensions are similar to list comprehensions:  
