@@ -1,0 +1,31 @@
+unix code
+pwd		 present working directory
+ls 		 list what's in the directory
+cd 	 	 change directory
+say 	 "hello pris"
+open http://recurse.com/
+. and ..
+. is the directory you're in right now .. is the parent directory
+ls -lah this is the command that says show me everything even hidden things, l long a all h human
+cat  	concatenate 
+
+sayhello
+./sayhello
+
+man chmod  	change mode, man is the command for manual 
+
+-rw-r--r-- 	user, then group, then file? 
+chmod 755 meaning, read write execute for user, then read write for everyone else 
+
+cp 		copy
+cp sayhello /usr/local/bin 		bin is binaries or commands
+echo "hello pris" 				just repeats what you put into it
+
+ps 
+ps aux 			I think this shows you everything running
+
+kill pid 		closes a program
+
+
+
+overthewire.org 	bandit level 0 start learning how to do command line
